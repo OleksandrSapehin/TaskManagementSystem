@@ -1,0 +1,15 @@
+package com.example.taskmanagementsystem.service;
+
+import com.example.taskmanagementsystem.models.Comment;
+
+import java.util.List;
+
+public interface CommentService {
+
+    Comment create(Comment comment,Long taskId);
+
+    List<Comment> getByTaskId(Long taskId);
+
+    void deleteById(Long id);
+
+}
